@@ -36,10 +36,10 @@ const List = () => {
         <table className="table table-bordered">
             <thead>
                 <tr>
-                    <th>S No.</th>
-                    <th>Full Name</th>
-                    <th>Email</th>
-                    <th>Actions</th>
+                    <th>Id.</th>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>

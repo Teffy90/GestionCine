@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { useParams,useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
  
 const View = () => {
     const {id}=useParams();
@@ -26,7 +27,6 @@ const View = () => {
     const clickToBackHandler=()=>{
         navigate('/');
     }
- 
     return <div>
         <div className="container">
             <div className='row'>
@@ -36,9 +36,15 @@ const View = () => {
                     <table className="table">
                         <thead>
                             <tr>
-                                <th>S No.</th>
-                                <th>Full Name</th>
-                                <th>Email</th>
+                                <th>Id</th>
+                                <th>Nombre</th>
+                                <th>Correo</th>
+                                <th>Nombre de la Pelicula</th>
+                                <th>Cantidad de Entradas</th>
+                                <th>Ubicación</th>
+                                <th>Fecha</th>
+                                <th>Precio</th>
+                                <th>Acción</th>
                                
                             </tr>
                         </thead>
@@ -47,6 +53,12 @@ const View = () => {
                                 <td>{user.id}</td>
                                 <td>{user.name}</td>
                                 <td>{user.email}</td>
+                                <td>Spider-Man: Across the Spider-Verse</td>
+                                <td>2</td>
+                                <td>J10 - J11</td>
+                                <td>21/08/2023</td>
+                                <td>18000</td>
+                                <td><NavLink to="" className="btn btn-danger mx-2">Descargar Factura</NavLink></td>
                             </tr>
  
                         </tbody>
