@@ -49,15 +49,15 @@ const Home = () => {
                         <form>
                             <div className="mb-3 mt-3">
                                 <label className="form-label"> Nombre:</label>
-                                <input type="text" className="form-control" id="name" placeholder="Enter Your Full Name" name="name" onChange={e => changeUserFieldHandler(e)} />
+                                <input type="text" className="form-control" id="name" placeholder="Ingresa tu nombre completo" name="name" onChange={e => changeUserFieldHandler(e)} />
                             </div>
                             <div className="mb-3 mt-3">
                                 <label className="form-label">Correo:</label>
-                                <input type="email" className="form-control" id="email" placeholder="Enter email" name="email" onChange={e => changeUserFieldHandler(e)} required/>
+                                <input type="email" className="form-control" id="email" placeholder="Ingresa tu correo electronico" name="email" onChange={e => changeUserFieldHandler(e)} required/>
                             </div>
                             <div className="mb-3 mt-3">
                                 <label className="form-label">Contraseña:</label>
-                                <input type="text" className="form-control" id="password" placeholder="Enter password" name="password" onChange={e => changeUserFieldHandler(e)} required/>
+                                <input type="text" className="form-control" id="password" placeholder="Ingresa una contraseña" name="password" onChange={e => changeUserFieldHandler(e)} required/>
                             </div>
                              
                             <button type="submit" className="btn btn-primary" onClick={e => onSubmitChange(e)}>Aceptar</button>{' '}
